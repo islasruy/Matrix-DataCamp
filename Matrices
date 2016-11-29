@@ -9,3 +9,18 @@ worldwide_vector <-
 
 #Correct Answer
 worldwide_vector <- rowSums(star_wars_matrix)
+
+Adding a column for the Worldwide box office
+
+In the previous exercise you calculated the vector that contained the worldwide box office receipt for each of the three Star Wars
+movies. However, this vector is not yet part of star_wars_matrix.
+
+You can add a column or multiple columns to a matrix with the cbind() function, which merges matrices and/or vectors together by 
+column. For example:
+
+big_matrix <- cbind(matrix1, matrix2, vector1 ...)
+
+#Instruction
+#Bind the new variable worldwide_vector as a column to star_wars_matrix
+#Correct Answer:
+all_wars_matrix <- cbind(star_wars_matrix, worldwide_vector)
